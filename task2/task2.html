@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    <style>
+
+        
+
+        h1 {
+            color: rgb(99, 37, 44);
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 70vw;
+        }
+
+        .wrapCharts {
+            display: flex;     
+            height: 50%;     
+        }
+
+        #myCities {
+            margin-left: 4rem;
+        }
+
+        .wrapLow {
+            margin-top: 5rem; 
+            display: flex;
+        }
+
+        .wrapName {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #button {
+            width: 12rem;
+            height: 3rem;
+            border-radius: 2rem;
+            background-color: rgb(164, 119, 124);
+            border: none;
+            font-size: medium;
+        }
+
+        #name {
+            margin-top: 2rem;
+            color: rgb(46, 4, 9);
+            font-size: medium;
+            font-weight: 700;
+            width: 14rem;
+        }
+
+        .foo {
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Dashboard (обо всем на свете)</h1>
+    <div class="wrap">   
+        
+        <div class="wrapCharts">
+            <canvas id="myTasks"></canvas>
+            <canvas height="300" id="myCities"></canvas>
+        </div>
+
+        <div class="wrapLow">
+            <div class="foo" id="foo" data-date="01/25/2020"></div>
+            <div class="wrapName">
+                <button id="button">Нажми меня</button>
+                <div id="name"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./bundle.js"></script>
+</body>
+</html>
