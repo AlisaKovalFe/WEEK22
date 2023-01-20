@@ -15,7 +15,7 @@ const dataTasks = {
         'Barcelona',
     ],
     datasets: [{
-    label: 'Европейские столицы для туризма в 3000году',
+    label: 'Европейские столицы для туризма в 2023 году',
     data: [3, 2, 1, 1, 3],
     backgroundColor: [
         'rgb(234, 190, 198)',
@@ -53,7 +53,7 @@ new Chart(cities, {
         labels: dataCities.map(row => row.city),
         datasets: [
         {
-            label: 'Температору летом в европейский столицах',
+            label: 'Температору летом в европейский столицах (°C)',
             data: dataCities.map(row => row.count)
         }
         ]
@@ -61,12 +61,12 @@ new Chart(cities, {
     }
 );
 
-const datepicker = new Datepicker(elem); 
+new Datepicker(elem); 
 
 button.addEventListener('click', () => {
     
     let result = humanNames.femaleRandom()
-    name.innerHTML = result + " является одно из самых популярных имен в мире"
+    name.innerHTML = result + " - одно из самых популярных имен в мире"
     
 })
 

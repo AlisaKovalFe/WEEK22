@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            width: 7rem;
+            height: 1.5rem;
+            background-color: rgb(163, 135, 189);
+            border-radius: 1rem;
+            border: none;
+        }
+
+        img {
+            margin-top: 2rem;
+            margin-right: 1rem;          
+        }
+
+        .imgSize {
+            width: 15rem;  
+            height: 15rem;
+            object-fit:cover;
+        }
+
+        .imagesAll {
+            display: flex;
+            width: 80rem;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <div>
+            <input id="getGif" type="text" placeholder="имя GIF">
+            <button id="button">Искать!</button>
+        </div>
+
+        <div class="imagesAll">
+            <img id="firstImage" src="" alt="">
+            <img id="secondImage" src="" alt="">
+            <img id="thirdImage" src="" alt="">
+            <img id="fourthImage" src="" alt="">
+            <img id="fifthImage" src="" alt="">
+        </div>
+    </div>
+    <div></div>
+
+    <script src="./task1.js"></script>
+</body>
+</html>
